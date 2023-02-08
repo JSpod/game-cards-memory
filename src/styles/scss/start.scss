@@ -1,0 +1,55 @@
+.startBlock {
+  padding: 3rem 4rem;
+  border-radius: 0.75rem;
+  background-color: #c2f5ff;
+
+  .startBlock__title {
+    text-align: center;
+  }
+
+  &__choose {
+    margin: 3rem 0;
+    flex-direction: row;
+    position: relative;
+
+    & li:first-child {
+      margin-left: 0;
+    }
+
+    & li:last-child {
+      margin-right: 0;
+    }
+
+    // Styling for list items
+    & li {
+      // Positioning
+      margin: 0 1.5rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.75rem;
+
+      // Typography
+      font-size: 4rem;
+      list-style-type: none;
+      text-decoration: none;
+      user-select: none;
+
+      // Colors
+      border: 0.125rem solid darken(#fff, 30%);
+      background-color: #fff;
+      color: #0080c1;
+
+      // Hover effect for elements without the .selected class
+      &:hover:not(.selected) {
+        box-shadow: 0 0 0.5rem 0.25rem #0080c1;
+        transition: all 0.05s ease-in-out;
+      }
+
+      // Styles for the .selected class
+      &.selected {
+        background-color: #0080c1;
+        color: #fff;
+        border: 0.125rem solid darken(#0080c1, 30%);
+      }
+    }
+  }
+}
