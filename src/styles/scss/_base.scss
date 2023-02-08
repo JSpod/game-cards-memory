@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16 * $r; // = 1rem
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #004980;
+  color: #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  font-size: inherit;
+}
