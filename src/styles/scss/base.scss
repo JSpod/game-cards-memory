@@ -1,0 +1,102 @@
+@import 'vars';
+
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16 * $r; // = 1rem
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #004980;
+  color: #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-size: 1.5rem;
+  min-width: 15rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 0.125rem solid darken(#7ac100, 10%);
+  background-color: #7ac100;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-family: inherit;
+  user-select: none;
+
+  &:hover:not(:disabled) {
+    background-color: darken(#7ac100, 10%);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+:hover {
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+footer {
+  font-size: 0.5rem;
+  color: #80a0c0;
+
+  p {
+    margin: 0;
+    /* Remove default margin */
+  }
+}
+
+.tooltip {
+  font-size: 1rem;
+  height: 1.5rem;
+  margin-top: -1.5rem;
+  line-height: 1.5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --webkit-flex-direction: column; // Safari
+  --webkit-justify-content: center; // Safari
+  --webkit-align-items: center; // Safari
+  --moz-flex-direction: column; // Firefox
+  --moz-justify-content: center; // Firefox
+  --moz-align-items: center; // Firefox
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  font-size: inherit;
+}
