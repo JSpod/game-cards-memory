@@ -1,0 +1,8 @@
+# Ignore generated files
+*.css
+
+# Ignore dependencies
+node_modules/
+
+# Ignore system files
+.DS_Store
