@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<template id="game-block">
+  <section class="gameBlock">
+    <div class="gameBlock__header">
+      <div class="clock">
+        <div class="labels">
+          <span>min</span>
+          <span>sec</span>
+        </div>
+        <div class="timer">
+          <span class="minutes">00</span>
+          <span class="colon">:</span>
+          <span class="seconds">00</span>
+        </div>
+      </div>
+      <p class="gameBlock__level"><span id="game-difficulty"></span> level</p>
+      <button class="gameBlock__restart btn" id="game-restartt">Restart</button>
+    </div>
+    <div class="gameBlock__cards">
+      <div class="gameBlock__cards__item flip">
+        <div class="gameBlock__cards__item-front flip__front">
+          <img src="../img/cards/ace_of_diamonds.png" alt="ace_of_diamonds" />
+        </div>
+        <div class="gameBlock__cards__item-back flip__back">
+          <img src="../img/cards/card-back.png" alt="card-back" />
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
