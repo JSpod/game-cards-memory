@@ -1,19 +1,17 @@
 class Application {
-    constructor() {
-        this.screens = {};
-        this.blocks = {};
-        this.templates = {}
-    }
+  constructor() {
+    this.screens = {}
+    this.blocks = {}
+    this.templates = {}
+  }
 
-    renderScreen(screenName) {
-        this.screens[screenName]($ => out.log(screenName, $));
-    }
+  renderScreen(screenName) {
+    this.screens[screenName](($) => out.log(screenName, $))
+  }
 
-    renderBlock(blockName, container) {
-        this.blocks[blockName](container, $ => out.log(blockName, $));
-    }
-
+  renderBlock(blockName, container) {
+    this.blocks[blockName](container, ($) => out.log(blockName, $))
+  }
 }
 
-export const application = new Application();
-
+export const application = new Application()
