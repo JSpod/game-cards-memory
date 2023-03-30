@@ -1,0 +1,91 @@
+.gameBlock {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+    &__item {
+      width: 6rem;
+      height: 8rem; // 4:3
+      padding: 0.3rem;
+      background-color: #fff;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-front,
+      &-back {
+        position: absolute;
+        transition: transform 0.6s;
+        backface-visibility: hidden;
+      }
+
+      &-back {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  &__header {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center; /* align vertically */
+    justify-content: space-between; /* align horizontally */
+  }
+
+  &__level {
+    flex: 1;
+    text-align: center;
+
+    &--easy {
+      color: #00aa00;
+    }
+
+    &--medium {
+      color: #ffff00;
+    }
+
+    &--hard {
+      color: #ff0000;
+    }
+  }
+}
+
+.flip {
+  & &__front {
+    transform: rotateY(180deg);
+  }
+
+  & &__back {
+    transform: rotateY(0deg);
+  }
+}
+
+.clock {
+  color: #fff;
+
+  & .timer {
+    font-size: 4rem;
+    display: flex;
+    line-height: 0.8; // remove extra space at the bottom and top of the element (default is 1.2)
+
+    & .colon {
+      color: #ccc;
+      font-family: 'Palatino', Times;
+    }
+  }
+
+  & .labels {
+    display: flex;
+    font-size: 0.8rem;
+    width: 100%;
+
+    & span {
+      padding-right: 0.5rem;
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
