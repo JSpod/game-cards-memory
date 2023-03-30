@@ -4,5 +4,11 @@
   "main": "src/main.js",
   "repository": "git@github.com:stordev/game-card-pair.git",
   "author": "Dmitry Stor <stordbox@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "scripts": {
+    "format": "prettier --write './src/**/*.{js,ts,scss,html,json}'"
+  },
+  "devDependencies": {
+    "prettier": "2.8.6"
+  }
 }
