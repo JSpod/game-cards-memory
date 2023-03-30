@@ -1,0 +1,8 @@
+{
+  "name": "game-card-pair",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": "git@github.com:stordev/game-card-pair.git",
+  "author": "Dmitry Stor <stordbox@gmail.com>",
+  "license": "GPL-3.0"
+}
