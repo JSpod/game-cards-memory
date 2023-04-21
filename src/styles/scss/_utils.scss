@@ -1,0 +1,17 @@
+.hidden {
+  display: none;
+}
+
+:hover {
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  &:hover {
+    cursor: no-drop;
+  }
+}
