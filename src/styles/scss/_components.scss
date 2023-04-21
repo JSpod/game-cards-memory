@@ -1,0 +1,25 @@
+.tooltip {
+  font-size: 1rem;
+  height: 1.5rem;
+  margin-top: -1.5rem;
+  line-height: 1.5rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  min-width: 15rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 0.125rem solid darken(#7ac100, 10%);
+  background-color: #7ac100;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-family: inherit;
+  user-select: none;
+
+  &:hover:not(:disabled) {
+    background-color: darken(#7ac100, 10%);
+  }
+}
