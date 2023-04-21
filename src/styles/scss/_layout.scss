@@ -1,0 +1,25 @@
+footer {
+  font-size: 0.5rem;
+  color: #80a0c0;
+
+  p {
+    margin: 0;
+    /* Remove default margin */
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --webkit-flex-direction: column; // Safari
+  --webkit-justify-content: center; // Safari
+  --webkit-align-items: center; // Safari
+  --moz-flex-direction: column; // Firefox
+  --moz-justify-content: center; // Firefox
+  --moz-align-items: center; // Firefox
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+}
