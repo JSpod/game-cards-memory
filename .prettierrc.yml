@@ -6,3 +6,12 @@ overrides:
       parser: "scss" # scss is the default parser
       singleQuote: true
       trailingComma: "none"
+
+  - files: "*.js"
+    options:
+      parser: "babel" # babel is the default parser
+      semi: false
+      trailingComma: "es5"
+      singleQuote: true
+      jsxSingleQuote: false
+      arrowParens: "always"
