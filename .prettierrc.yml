@@ -1,1 +1,8 @@
 tabWidth: 2
+
+overrides:
+  - files: "*.scss"
+    options:
+      parser: "scss" # scss is the default parser
+      singleQuote: true
+      trailingComma: "none"
