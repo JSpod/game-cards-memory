@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "game-cards-memory",
+  "version": "1.0.0",
+  "repository": "git@github.com:stordev/game-card-pair.git",
+  "author": "Dmitry Stor",
+  "license": "GPL-3.0",
+}
