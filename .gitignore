@@ -1,8 +1,12 @@
-# Ignore generated files
-*.css
-
-# Ignore dependencies
+# Dependency directories
 node_modules/
 
-# Ignore system files
+# Build files
+.serve/
+dist/
+
+# OS generated files
 .DS_Store
+
+# IDE generated files
+*.min.css

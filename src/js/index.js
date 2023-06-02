@@ -1,10 +1,10 @@
-import Application from './components/Application.js'
-import RenderGameBlock from './components/GameBlock.js'
-import RenderStartBlock from './components/StartBlock.js'
-import RenderGameScreen from './components/renderGameScreen.js'
-import RenderStartScreen from './components/renderStartScreen.js'
-import Output from './utils/Output.js'
-import TemplateManager from './utils/TemplateManager.js'
+import Application from './components/Application'
+import RenderGameBlock from './components/GameBlock'
+import RenderStartBlock from './components/StartBlock'
+import RenderGameScreen from './components/renderGameScreen'
+import RenderStartScreen from './components/renderStartScreen'
+import Output from './utils/Output'
+import TemplateManager from './utils/TemplateManager'
 
 document.addEventListener('DOMContentLoaded', () => {
   // make these objects available to all scripts
